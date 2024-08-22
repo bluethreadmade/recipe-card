@@ -21,7 +21,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [https://github.com/bluethreadmade/recipe-card](https://github.com/bluethreadmade/recipe-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://bluethreadmade.github.io/recipe-card/](https://bluethreadmade.github.io/recipe-card/)
 
 ## My process
 
