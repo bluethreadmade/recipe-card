@@ -63,7 +63,7 @@ body {
   padding: 2.5rem;
   margin: 0.625rem;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 #picture {
@@ -77,8 +77,9 @@ body {
   font: 2.5rem "Young Serif";
 }
 
-#summary {
+.tagline {
   font: 1rem "Outfit";
+  color: #5F564D
 }
 
 #prep {
@@ -95,11 +96,23 @@ body {
   margin-bottom: 1rem;
 }
 
+li {
+  color: #5f564d;
+  padding-left: 1rem;
+}
+
 #prep-time,
 #ingredients,
 #instructions,
 li + li {
   margin-top: 0.5rem;
+}
+
+#ingredients,
+#instructions,
+li::marker {
+  color: #854632;
+  font-weight: 700;
 }
 
 .section-title {
@@ -111,11 +124,17 @@ li + li {
 
 #ingredients,
 #instructions {
-  margin: 2rem 0;
+  padding: 2rem 0;
+  width: 100%;
+  border-bottom: #5f564d;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: #E3DDD7;
 }
 
 #nutrition {
   margin-top: 2rem;
+  width: 100%;
 }
 
 .attribution {
