@@ -69,24 +69,53 @@ body {
 #picture {
   border-radius: 1.25rem;
   max-width: 41rem;
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
 }
 
 #title {
-    margin-bottom: 1.5rem;
-    font: 2.5rem "Young Serif"
+  margin-bottom: 1.5rem;
+  font: 2.5rem "Young Serif";
 }
 
 #summary {
-    font: 1rem "Outfit"
+  font: 1rem "Outfit";
 }
 
 #prep {
-    background-color: #FFF7FB;
-    border-radius: 1.25rem;
-    min-width: 100%;
-    margin: 2rem 0;
-    padding: 1.5rem
+  background-color: #fff7fb;
+  border-radius: 1.25rem;
+  min-width: 100%;
+  margin: 2rem 0 0;
+  padding: 1.5rem;
+}
+
+#prep-time {
+  color: #7a284e;
+  font: 600 1.25rem "Outfit";
+  margin-bottom: 1rem;
+}
+
+#prep-time,
+#ingredients,
+#instructions,
+li + li {
+  margin-top: 0.5rem;
+}
+
+.section-title {
+  color: #854632;
+  font-size: 1.75rem;
+  font-family: "Young Serif";
+  margin-bottom: 1.5rem;
+}
+
+#ingredients,
+#instructions {
+  margin: 2rem 0;
+}
+
+#nutrition {
+  margin-top: 2rem;
 }
 
 .attribution {
