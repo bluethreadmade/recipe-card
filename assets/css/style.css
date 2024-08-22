@@ -159,12 +159,12 @@ td {
     padding: 0.75rem; /* Space between cell content and border */
   }
 
-#col1 {
+.col1 {
   color: #5f564d;
   margin-left: 2rem
 }
 
-#col2 {
+.col2 {
   color: #854632;
   font: var(--text4bold);
   margin-left: 1rem;
