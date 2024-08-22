@@ -58,7 +58,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 0.625rem;
+  margin: 8rem 3rem ;
   padding: 0.625rem;
 }
 
@@ -72,11 +72,12 @@ body {
   margin: 0.625rem;
   justify-content: center;
   align-items: start;
+  width: 100%;
+  max-width: 40rem;
 }
 
 #picture {
   border-radius: 1.25rem;
-  max-width: 41rem;
   margin-bottom: 0.625rem;
 }
 
@@ -176,4 +177,36 @@ td {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+    body {
+      margin: 4rem 2rem;
+    }
+  
+    #card {
+      max-width: 30rem;
+    }
+}
+  
+@media (max-width: 480px) {
+    body {
+      margin: 0; 
+      padding: 0;
+    }
+  
+    #card {
+      max-width: 100%;
+      margin: 0; 
+      border-radius: 0;
+    }
+    #picture {
+        width: 100vw; 
+        max-width: none;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+        margin-top: calc(-50vw + 50%);
+
+        border-radius: 0
+    }
 }
