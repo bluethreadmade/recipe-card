@@ -79,7 +79,7 @@ body {
 
 .tagline {
   font: 1rem "Outfit";
-  color: #5F564D
+  color: #5f564d;
 }
 
 #prep {
@@ -129,12 +129,25 @@ li::marker {
   border-bottom: #5f564d;
   border-style: none none solid;
   border-width: 1px;
-  border-color: #E3DDD7;
+  border-color: #e3ddd7;
 }
 
 #nutrition {
   margin-top: 2rem;
   width: 100%;
+}
+
+/* tr + tr{
+  margin-top: 1.5rem;
+} */
+
+#col1 {
+  color: #5f564d;
+}
+
+#col2 {
+  color: #854632;
+  font: 700 1rem "Outfit";
 }
 
 .attribution {
