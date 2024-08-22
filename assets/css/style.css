@@ -42,6 +42,14 @@ h6 {
   isolation: isolate;
 }
 
+:root {
+    --text1: 400 2.5rem "Young Serif";
+    --text2: 400 1.75rem "Young Serif";
+    --text3: 600 1.25rem "Outfit";
+    --text4: 400 1rem "Outfit";
+    --text4bold: 700 1rem "Outfit";
+}
+
 body {
   font-family: "Young Serif", "Outfit";
   background-color: #f3e5d7;
@@ -74,12 +82,13 @@ body {
 
 #title {
   margin-bottom: 1.5rem;
-  font: 2.5rem "Young Serif";
+  font: var(--text1);
 }
 
 .tagline {
-  font: 1rem "Outfit";
+  font: var(--text4);
   color: #5f564d;
+  margin-bottom: 1.5rem;
 }
 
 #prep {
@@ -92,13 +101,14 @@ body {
 
 #prep-time {
   color: #7a284e;
-  font: 600 1.25rem "Outfit";
+  font: var(--text3);
   margin-bottom: 1rem;
 }
 
 li {
   color: #5f564d;
   padding-left: 1rem;
+  font: var(--text4);
 }
 
 #prep-time,
@@ -117,8 +127,7 @@ li::marker {
 
 .section-title {
   color: #854632;
-  font-size: 1.75rem;
-  font-family: "Young Serif";
+  font: var(--text2);
   margin-bottom: 1.5rem;
 }
 
@@ -126,10 +135,7 @@ li::marker {
 #instructions {
   padding: 2rem 0;
   width: 100%;
-  border-bottom: #5f564d;
-  border-style: none none solid;
-  border-width: 1px;
-  border-color: #e3ddd7;
+  border-bottom: 1px solid #e3ddd7;
 }
 
 #nutrition {
@@ -137,17 +143,31 @@ li::marker {
   width: 100%;
 }
 
-/* tr + tr{
-  margin-top: 1.5rem;
-} */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-child(1) td, 
+tr:nth-child(2) td, 
+tr:nth-child(3) td {
+  border-bottom: 1px solid #e3ddd7;
+}
+
+td {
+    padding: 0.75rem; /* Space between cell content and border */
+  }
 
 #col1 {
   color: #5f564d;
+  margin-left: 2rem
 }
 
 #col2 {
   color: #854632;
-  font: 700 1rem "Outfit";
+  font: var(--text4bold);
+  margin-left: 1rem;
+  margin-right: 2rem
 }
 
 .attribution {
